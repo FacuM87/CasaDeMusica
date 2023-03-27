@@ -59,6 +59,12 @@ footer{
     color: #b46f36;
 } 
 
+@media(max-width:768px){
+    .footerContenido{
+        flex-direction: column;
+    }
+}
+
 
 /* Footer - Fin */
 
