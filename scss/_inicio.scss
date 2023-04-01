@@ -1,0 +1,105 @@
+
+/* Carrusel Index */
+
+.port{
+    height: 200px;
+}
+
+/*Tarjetas - Inicio*/
+
+.destacadosTarjetas{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px 0px;
+    margin: 15px;
+    
+    h2{
+        font-size:x-large;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    .imgTarjetas{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+    }
+
+    .btnTarjetas{
+        width: auto;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 0px 5px;
+        &:hover{
+            background-color: #b67a47;
+            transition: 0.5s;
+            border: 1px solid;
+            padding: 0px 15px;
+        }
+    }
+
+    &:hover{
+        box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+        transition: 1s;
+    }
+}
+
+@media (max-width:500px){
+    .destacadosTarjetas{
+        flex-direction: column;
+    }
+}
+
+/*Tarjetas - Fin*/
+
+/* Ofertas Tarjetas - Inicio*/
+
+.ofertasTarjetas{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 220px;
+    padding: 15px 0px;
+    margin: 15px;
+
+    &:hover{
+        box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+        transition: 0.5s;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    .img-ofertas{
+        width: 150px;
+        height: 150px;
+    }
+
+    .btn-ofertasTarjetas{
+        width: auto;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 0px 5px;
+        &:hover{
+            background-color: #b67a47;
+            transition: 0.5s;
+            border: 1px solid;
+            padding: 0px 15px;
+        }
+    }
+}
+
+/* Ofertas Tarjetas - Fin*/
+
+/* Marcas - Inicio */
+
+.img-marcas{
+    width: 100px;
+    height: 100px;
+    }
+
+/* Marcas - Fin */

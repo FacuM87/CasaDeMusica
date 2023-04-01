@@ -1,0 +1,90 @@
+
+/* Formulario de Contacto */
+
+.form{
+    display: grid;
+    margin: 50px auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(21,29,41);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Contacto Contacto"
+                         "Nombre   Apellido"
+                         "N°deContacto   Email"
+                         "Mensaje   Mensaje"
+                         "Enviar    Enviar";
+
+                        &:hover{
+                            box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+                            transition: 0.5s;
+                        }
+
+                        label{
+                            display: flex;
+                            flex-direction: column;
+                            padding: 10px;
+                            color: #c27e3a;
+                            input, textarea{
+                                border: none;
+                                background-color: rgb(21,29,41);
+                                border-bottom: 1px solid #c27e3a;
+                            }    
+                        }
+
+                        h2{
+                            color: #c27e3a;
+                            grid-area: Contacto;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+
+                        label:nth-child(2){
+                            grid-area: Nombre;
+                        }
+
+                        label:nth-child(3){
+                            grid-area: Apellido;
+                        }
+
+                        label:nth-child(4){
+                            grid-area: N°deContacto;
+                        }
+
+                        label:nth-child(5){
+                            grid-area: Email;
+                        }
+
+                        label:nth-child(6){
+                            grid-area: Mensaje
+                        }
+
+                        button{
+                            grid-area: Enviar;
+                            width: auto;
+                            border: 1px solid;
+                            border-radius: 5px;
+                            justify-self: center;
+                            padding: 0px 5px;
+                            &:hover{
+                                background-color: #b67a47;
+                                transition: 0.5s;
+                                border: 1px solid;
+                                padding: 0px 15px;                               
+                            }
+                        }
+}
+
+@media (max-width:1000px){
+    .form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "Contacto Contacto"
+                             "Nombre   Nombre"
+                             "Apellido Apellido"
+                             "N°deContacto N°deContacto"
+                             "Email  Email"
+                             "Mensaje   Mensaje"
+                             "Enviar    Enviar";
+
+    }
+}

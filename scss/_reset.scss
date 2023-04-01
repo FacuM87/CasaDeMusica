@@ -1,0 +1,23 @@
+/* Reset */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding-top: 146px;
+    overflow: hidden;
+}
+
+footer{
+    overflow: hidden;
+}
+
+/* VERIFICAR ESTO:
+.row, .container, .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+*/
