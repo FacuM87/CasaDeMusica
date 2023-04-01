@@ -1,0 +1,324 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding-top: 146px;
+    overflow: hidden;
+}
+
+footer{
+    overflow: hidden;
+}
+
+/* Navegador - Inicio*/
+
+.navbar{
+    z-index: 5555;
+    background-color: white;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: #b67a47;
+    transition: 0.5s;
+    border: 1px solid;
+    color: white;
+}
+
+/* Navegador - Fin */
+
+/* Footer - Inicio */
+
+.footerInfo{
+    width: 350px;
+}
+
+.footerInfo ul li{
+    list-style: none;
+}
+
+.sucursales ul li{
+    list-style: none;
+}
+
+.redes{
+    list-style: none;
+    margin: 5px;
+}
+
+.redes img{
+    width: 20px;
+    height: 20px;
+}
+
+.footerFooter{
+    background-color: #121a24;
+    color: #b46f36;
+} 
+
+@media(max-width:768px){
+    .footerContenido{
+        flex-direction: column;
+    }
+}
+
+
+/* Footer - Fin */
+
+.port{
+    height: 200px;
+}
+
+/*Tarjetas - Inicio*/
+
+.destacadosTarjetas{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px 0px;
+    margin: 15px;
+}
+
+.destacadosTarjetas h2{
+    font-size:x-large;
+}
+
+.destacadosTarjetas p{
+    font-size: medium;
+}
+
+.imgTarjetas{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.destacadosTarjetas:hover{
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+    transition: 1s;
+}
+
+.btnTarjetas{
+    width: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.btnTarjetas:hover{
+    background-color: #b67a47;
+    transition: 0.5s;
+    border: 1px solid;
+    padding: 0px 15px;
+}
+
+@media (max-width:500px){
+    .destacadosTarjetas{
+        flex-direction: column;
+    }
+}
+
+/*Tarjetas - Fin*/
+
+/* Ofertas Tarjetas - Inicio*/
+
+.ofertasTarjetas{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 220px;
+    padding: 15px 0px;
+    margin: 15px;
+}
+
+.ofertasTarjetas p{
+    font-size: medium;
+}
+
+.ofertasTarjetas:hover{
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+    transition: 0.5s;
+}
+
+.img-ofertas{
+    width: 150px;
+    height: 150px;
+}
+
+.btn-ofertasTarjetas{
+    width: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.btn-ofertasTarjetas:hover{
+    background-color: #b67a47;
+    transition: 0.5s;
+    border: 1px solid;
+    padding: 0px 15px;
+}
+
+/* Ofertas Tarjetas - Fin*/
+
+/* Marcas - Inicio */
+
+.img-marcas{
+    width: 100px;
+    height: 100px;
+    }
+
+/* Marcas - Fin */
+
+/* Instrumentos */
+
+.Ins-Port{
+    width: 100vw;
+    background-color: lightgray;
+}
+
+.ins-tarj{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 350px;
+    padding: 15px 0px;
+    margin: 15px;
+}
+
+.ins-tarj h2{
+    font-size:x-large;
+}
+
+.ins-tarj p{
+    font-size: medium;
+}
+
+.img-Tarj-Ins{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.ins-tarj:hover{
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+    transition: 0.5s;
+}
+
+.btnTarjetas{
+    width: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.btnTarjetas:hover{
+    background-color: #b67a47;
+    transition: 0.5s;
+    border: 1px solid;
+    padding: 0px 15px;
+}
+
+/* Instrumentos - Fin */
+
+/* Formulario Contacto - Inicio */
+
+.form{
+    display: grid;
+    margin: 50px auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(21,29,41);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Contacto Contacto"
+                         "Nombre   Apellido"
+                         "N°deContacto   Email"
+                         "Mensaje   Mensaje"
+                         "Enviar    Enviar";
+}
+
+.form:hover{
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+    transition: 0.5s;
+}
+
+.form label{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #c27e3a;
+}
+
+.form h2{
+    color: #c27e3a;
+}
+
+.form label input, .form label textarea{
+    border: none;
+    background-color: rgb(21,29,41);
+    border-bottom: 1px solid #c27e3a;
+}
+
+
+.form h2{
+    grid-area: Contacto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form label:nth-child(2){
+    grid-area: Nombre;
+}
+
+.form label:nth-child(3){
+    grid-area: Apellido;
+}
+
+.form label:nth-child(4){
+    grid-area: N°deContacto;
+}
+
+.form label:nth-child(5){
+    grid-area: Email;
+}
+
+.form label:nth-child(6){
+    grid-area: Mensaje
+}
+
+.form button{
+    grid-area: Enviar;
+    width: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    justify-self: center;
+    padding: 0px 5px;
+}
+
+.form button:hover{
+    background-color: #b67a47;
+    transition: 0.5s;
+    border: 1px solid;
+    padding: 0px 15px;
+    
+}
+
+@media (max-width:1000px){
+    .form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "Contacto Contacto"
+                             "Nombre   Nombre"
+                             "Apellido Apellido"
+                             "N°deContacto N°deContacto"
+                             "Email  Email"
+                             "Mensaje   Mensaje"
+                             "Enviar    Enviar";
+
+    }
+}
+/* Formulario Contacto - Final */
+
