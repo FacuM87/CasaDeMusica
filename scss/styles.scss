@@ -3,56 +3,12 @@
 @import "footer";
 @import "inicio";
 @import "form";
+@import "recomendaciones";
+@import "instrumentos";
+@import "audio";
+@import "extend";
 
-/* Instrumentos */
 
-.Ins-Port{
-    width: 100vw;
-    background-color: lightgray;
-}
-
-.ins-tarj{
-    display: flex;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    width: 350px;
-    padding: 15px 0px;
-    margin: 15px;
-
-    &:hover{
-        box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
-        transition: 0.5s;
-    }
-
-    h2{
-        font-size:x-large;
-    }
-
-    p{
-        font-size: medium;
-    }
-
-    .img-Tarj-Ins{
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-    }
-
-    .btnTarjetas{
-        width: auto;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-        padding: 0px 5px;
-        &:hover{
-            background-color: #b67a47;
-            transition: 0.5s;
-            border: 1px solid;
-            padding: 0px 15px;
-        }
-    }
-}
-
-/* Instrumentos - Fin */
 
 
 

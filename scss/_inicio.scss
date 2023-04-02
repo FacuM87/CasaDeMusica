@@ -1,4 +1,9 @@
 
+.bg-img-index{
+    @extend %bg-img;
+    background-image: url(../multimedia/Img/backgroundImg.png);
+}
+
 /* Carrusel Index */
 
 .port{
@@ -8,12 +13,9 @@
 /*Tarjetas - Inicio*/
 
 .destacadosTarjetas{
+    @extend %tarjetas;
     display: flex;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
     width: 300px;
-    padding: 15px 0px;
-    margin: 15px;
     
     h2{
         font-size:x-large;
@@ -59,11 +61,8 @@
 /* Ofertas Tarjetas - Inicio*/
 
 .ofertasTarjetas{
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+    @extend %tarjetas;
     width: 220px;
-    padding: 15px 0px;
-    margin: 15px;
 
     &:hover{
         box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);

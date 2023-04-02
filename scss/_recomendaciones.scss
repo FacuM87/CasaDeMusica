@@ -1,0 +1,5 @@
+
+.bg-img-rec{
+    @extend %bg-img;
+    background-image: url(../multimedia/Img/backgroundImg.png);
+}

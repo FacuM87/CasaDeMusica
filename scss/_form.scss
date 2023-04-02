@@ -1,4 +1,9 @@
 
+.bg-img-cont{
+    @extend %bg-img;
+    background-image: url(../multimedia/Img/backgroundImg.png);
+}
+
 /* Formulario de Contacto */
 
 .form{
