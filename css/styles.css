@@ -15,11 +15,6 @@ footer {
   overflow: hidden;
 }
 
-.row, .container, .container-fluid {
-  margin: 0;
-  padding: 0;
-}
-
 /* Navegador */
 .navbar {
   z-index: 5555;
@@ -224,6 +219,54 @@ footer {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
 
+.img-recom {
+  width: 80px;
+  height: 230px;
+}
+
+.btnReco {
+  display: block;
+  bottom: 36px;
+  left: 8px;
+  padding: 0px 5px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+.btnReco:hover {
+  transition: 0.5s;
+  background-color: orangered;
+  color: white;
+}
+
+.reco:hover .btnReco {
+  opacity: 1;
+}
+
+.cont-recom {
+  width: 380px;
+  height: 250px;
+}
+
+@media (max-width: 990px) {
+  .bajo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 475px) {
+  .youtubeVid {
+    width: 100%;
+  }
+  .cont-recom {
+    font-size: small;
+  }
+}
 /* Instrumentos */
 .bg-img-ins {
   background-image: url(../multimedia/Img/backgroundImg.png);

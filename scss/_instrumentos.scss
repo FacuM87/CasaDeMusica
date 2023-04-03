@@ -9,6 +9,7 @@
     width: 100vw;
 }
 
+
 .ins-tarj{
     display: flex;
     border: 1px solid lightgrey;
@@ -16,7 +17,7 @@
     width: 350px;
     padding: 15px 0px;
     margin: 15px;
-
+    
     &:hover{
         box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
         transition: 0.5s;
