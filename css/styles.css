@@ -31,19 +31,16 @@ footer {
 /* Footer */
 .footerInfo {
   width: 350px;
+  /*ul li{
+      list-style: none;
+  }*/
 }
-.footerInfo ul li {
+
+footer ul li {
   list-style: none;
 }
 
-.sucursales ul li {
-  list-style: none;
-}
-
-.redes ul li {
-  list-style: none;
-}
-.redes img {
+.imgRedes {
   width: 20px;
   height: 20px;
 }

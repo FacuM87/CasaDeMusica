@@ -3,26 +3,20 @@
 
 .footerInfo{
     width: 350px;
-    ul li{
+    /*ul li{
         list-style: none;
-    }
+    }*/
 }
 
-.sucursales {
-    ul li{
+footer ul li{
     list-style: none;
 }
+
+.imgRedes{
+    width: 20px;
+    height: 20px;
 }
 
-.redes{
-    ul li{
-        list-style: none;
-    }
-    img{
-        width: 20px;
-        height: 20px;
-    }
-}
 
 .footerFooter{
     background-color: #121a24;
