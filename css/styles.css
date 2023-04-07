@@ -40,9 +40,8 @@ footer {
   list-style: none;
 }
 
-.redes {
+.redes ul li {
   list-style: none;
-  margin: 5px;
 }
 .redes img {
   width: 20px;
@@ -259,12 +258,14 @@ footer {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 475px) {
+@media (max-width: 575px) {
   .youtubeVid {
     width: 100%;
   }
   .cont-recom {
     font-size: small;
+    width: 100%;
+    overflow: auto;
   }
 }
 /* Instrumentos */

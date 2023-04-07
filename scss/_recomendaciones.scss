@@ -37,7 +37,7 @@
 .cont-recom{
     width: 380px;
     height: 250px;
-}
+    }
 
 @media (max-width:990px){
     .bajo{
@@ -46,12 +46,14 @@
     }
 }
 
-@media (max-width:475px){
+@media (max-width:575px){
     .youtubeVid{
         width: 100%;
     }
     .cont-recom{
         font-size: small;
+        width: 100%;
+        overflow: auto;
     }
 }
 
