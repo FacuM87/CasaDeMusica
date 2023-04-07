@@ -64,6 +64,7 @@ footer ul li {
   height: 200px;
 }
 
+/* Título */
 /*Tarjetas - Inicio*/
 .destacadosTarjetas {
   display: flex;
@@ -315,6 +316,23 @@ footer ul li {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
 
+/*
+.h1Container{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    .h1Audio{
+        text-align: center;
+        background-color: rgb(128, 128, 128, .8);
+        border-radius: 5px;
+    }    
+}
+*/
+.h1Audio {
+  text-align: center;
+}
+
+/* Tarjetas */
 .destacadosTarjetas, .ofertasTarjetas {
   border: 1px solid lightgrey;
   border-radius: 5px;
