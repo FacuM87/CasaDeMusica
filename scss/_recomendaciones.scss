@@ -25,7 +25,7 @@
     opacity: 0;
     &:hover{
         transition: .5s;
-        background-color: orangered;
+        background-color: $bg-color;
         color: white;
     }
     }

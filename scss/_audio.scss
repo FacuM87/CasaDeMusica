@@ -4,22 +4,124 @@
     background-image: url(../multimedia/Img/backgroundImg.png);
 }
 
-/*
-.h1Container{
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    .h1Audio{
-        text-align: center;
-        background-color: rgb(128, 128, 128, .8);
-        border-radius: 5px;
-    }    
-}
-*/
-
 .h1Audio{
-    text-align: center;
-} 
+    width: fit-content;
+    background-color: rgba(39, 37, 37, 0.4);
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
-/* Tarjetas */
+
+/* --- */
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 600px; 
+    &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        .flip-card-back {
+            background-color: rgb(211, 211, 211, .6);
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: white;
+                h5{
+                   background-color: rgba(0, 0, 0, 0.349); 
+                   padding: 15px;
+            
+                }
+            }
+          }
+        .flip-card-front {
+            background-color:  transparent;
+            color: black;
+          }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+      }
+  }
+  
+.auriculares{
+    background-color: rgba(0, 0, 0, 0.349);
+    h3{
+        text-align: center;
+        color: white;
+    }
+    .tarjCar{
+        display: flex;
+        justify-content: center;
+
+        .card{
+            .bg-auriPioneer{
+                background-color: rgba(14, 13, 13, 0.808);
+            }
+            &:hover {
+                box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+                transition: 1s;
+            }
+            margin: 10px;
+            width: 220px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            &:hover .card-body{
+                transform: translateY(0);
+                transition: 1s;
+            }   
+            }
+            .card-body{
+                position: absolute;
+                color: white;
+                bottom: 0;
+                transform: translate(0,100px);
+                .precioAnterior{
+                    text-decoration: line-through;
+                    margin: 0;
+                    font-size: small;
+                    color: lightgray;
+                }
+                .btn-ofertasTarjetas{
+                    width: auto;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    padding: 0px 5px;
+                    &:hover{
+                        background-color: $bg-color;
+                        transition: 0.5s;
+                        border: 1px solid;
+                        padding: 0px 15px;
+                    }
+                }
+
+            .card-img-top{
+                object-fit: cover;
+            }
+        }
+    }
+}  
+  
+.carousel{
+    width: 100%;
+    height: 200px;
+} 
+  
+  
 
