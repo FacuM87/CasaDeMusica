@@ -139,6 +139,15 @@ footer ul li {
 }
 
 /* Marcas - Fin */
+/* Botón WhatsApp */
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
 .bg-img-cont {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
@@ -211,6 +220,15 @@ footer ul li {
     grid-template-areas: "Contacto Contacto" "Nombre   Nombre" "Apellido Apellido" "N°deContacto N°deContacto" "Email  Email" "Mensaje   Mensaje" "Enviar    Enviar";
   }
 }
+/* Botón WhatsApp */
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
 .bg-img-rec {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
@@ -265,6 +283,15 @@ footer ul li {
     overflow: auto;
   }
 }
+/* Botón WhatsApp */
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
 /* Instrumentos */
 .bg-img-ins {
   background-image: url(../multimedia/Img/backgroundImg.png);
@@ -311,6 +338,15 @@ footer ul li {
 }
 
 /* Instrumentos - Fin */
+/* Botón WhatsApp */
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
 .bg-img-audio {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
@@ -424,11 +460,71 @@ footer ul li {
   object-fit: cover;
 }
 
-.carousel {
+/*.carousel{
+    width: 100%;
+    height: 200px;
+} */
+/* slider */
+.slider {
   width: 100%;
   height: 200px;
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  animation: cambio 10s infinite alternate linear;
+  width: 400%;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/*@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}*
+}*/
+/* Botón WhatsApp */
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
 .destacadosTarjetas, .ofertasTarjetas {
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -441,6 +537,27 @@ footer ul li {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.container-boton {
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 10px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+.container-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.container-boton .boton {
+  width: 40px;
+  transition: ease 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
