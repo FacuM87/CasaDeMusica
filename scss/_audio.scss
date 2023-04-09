@@ -12,8 +12,7 @@
     border-bottom-right-radius: 5px;
 }
 
-
-/* --- */
+/* Audio */
 
 .flip-card {
     background-color: transparent;
@@ -59,6 +58,8 @@
       }
   }
   
+/* Oferta Auriculares */
+
 .auriculares{
     background-color: rgba(0, 0, 0, 0.349);
     h3{
@@ -118,20 +119,15 @@
     }
 }  
   
-/*.carousel{
-    width: 100%;
-    height: 200px;
-} */
-  
 /* slider */
 
 .slider{
-    width: 100%;
+    width: 600px;
     height: 200px;
     overflow: hidden;
     ul{
         display: flex;
-        animation: cambio 10s infinite alternate linear;
+        animation: cambio 8s infinite alternate linear;
         width: 400%;
     }
     li{
@@ -158,12 +154,6 @@
       75%{margin-left: -300%;}
       100%{margin-left: -300%;}
   }
-  
-  /*@media only screen and (min-width:320px) and (max-width:768px){
-  .slider, .slider ul, .slider img{
-      height: 100vh;
-  }*
-  }*/
 
 /* Botón WhatsApp */
 
@@ -171,11 +161,11 @@
     @extend %WhatsApp-btn
     }
     
-    @keyframes efecto{
-        0%{
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
-        }
-        100%{
-            box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-        }
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
     }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
