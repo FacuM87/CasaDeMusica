@@ -64,6 +64,80 @@ footer ul li {
   height: 200px;
 }
 
+/* Barras de Sonido */
+.barrasSonido {
+  position: relative;
+  width: 80px;
+  height: 100px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(17, 29, 34, 0.555);
+}
+.barrasSonido span {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 10px;
+  height: 40px;
+}
+.barrasSonido .barra1 {
+  background-color: #b67a47;
+  left: 5%;
+  animation: barras 0.5s infinite alternate-reverse;
+}
+.barrasSonido .barra2 {
+  background-color: #b67a47;
+  left: 25%;
+  animation: barras 0.9s infinite alternate-reverse;
+}
+.barrasSonido .barra3 {
+  background-color: #b67a47;
+  left: 45%;
+  animation: barras 0.3s infinite alternate-reverse;
+}
+.barrasSonido .barra4 {
+  background-color: #b67a47;
+  left: 65%;
+  animation: barras 1.3s infinite alternate-reverse;
+}
+.barrasSonido .barra5 {
+  background-color: #b67a47;
+  left: 85%;
+  animation: barras 0.8s infinite alternate-reverse;
+}
+
+@keyframes barras {
+  to {
+    height: 2px;
+  }
+}
+@media (max-width: 660px) {
+  .barrasSonido {
+    display: none;
+  }
+}
+/* Titulo */
+.tituloIndex {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 660px) {
+  .tituloIndex h2 {
+    animation: cambiaColor 0.8s alternate-reverse infinite;
+  }
+}
+@media (max-width: 450px) {
+  .tituloIndex h1 {
+    font-size: larger;
+  }
+  .tituloIndex h2 {
+    font-size: larger;
+  }
+}
 /*Tarjetas - Inicio*/
 .destacadosTarjetas {
   display: flex;
@@ -104,6 +178,15 @@ footer ul li {
 }
 /*Tarjetas - Fin*/
 /* Ofertas Tarjetas - Inicio*/
+.ofertas {
+  animation: cambiaColor 1.5s alternate-reverse infinite;
+}
+
+@keyframes cambiaColor {
+  to {
+    color: #b67a47;
+  }
+}
 .ofertasTarjetas {
   width: 220px;
 }
@@ -233,6 +316,23 @@ footer ul li {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
 
+.sugRec-título {
+  background-color: rgba(0, 0, 0, 0.404);
+  width: fit-content;
+  height: fit-content;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 425px) {
+  .sugRec-título h1 {
+    font-size: x-large;
+  }
+}
 .img-recom {
   width: 80px;
   height: 230px;
@@ -283,6 +383,23 @@ footer ul li {
     overflow: auto;
   }
 }
+/* Caja Comentarios */
+.comentarios {
+  margin-top: 80px;
+}
+.comentarios h3 {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .comentarios h3 {
+    font-size: medium;
+  }
+}
 /* Botón WhatsApp */
 @keyframes efecto {
   0% {
@@ -308,6 +425,7 @@ footer ul li {
   width: 350px;
   padding: 15px 0px;
   margin: 15px;
+  background-color: rgba(255, 255, 255, 0.664);
 }
 .ins-tarj:hover {
   box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.67);
@@ -355,8 +473,8 @@ footer ul li {
   width: fit-content;
   background-color: rgba(39, 37, 37, 0.4);
   margin: 0 auto;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Audio */

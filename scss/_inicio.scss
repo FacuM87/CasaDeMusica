@@ -11,6 +11,86 @@
     height: 200px;
 }
 
+/* Barras de Sonido */
+
+.barrasSonido{
+    position: relative;
+    @include sizes (100px,80px);
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(17, 29, 34, 0.555);
+
+    span{
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        @include sizes (40px,10px);
+    }
+    .barra1{
+        background-color: $bg-color ;
+        left: 5%;
+        animation: barras .5s infinite alternate-reverse;
+    }
+    .barra2{
+        background-color: $bg-color;
+        left: 25%;
+        animation: barras .9s infinite alternate-reverse;
+    }
+    .barra3{
+        background-color: $bg-color;
+        left: 45%;
+        animation: barras .3s infinite alternate-reverse;
+    }
+    .barra4{
+        background-color: $bg-color;
+        left: 65%;
+        animation: barras 1.3s infinite alternate-reverse;
+    }
+    .barra5{
+        background-color: $bg-color;
+        left: 85%;
+        animation: barras .8s infinite alternate-reverse;
+    }
+}
+
+@keyframes barras {
+    to{
+        height: 2px;
+    }
+}
+
+@media (max-width:660px){
+    .barrasSonido{
+        display: none;
+    }
+}
+
+
+/* Titulo */
+
+.tituloIndex{
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+@media (max-width:660px){
+    .tituloIndex h2{
+        animation: cambiaColor .8s alternate-reverse infinite;
+    }
+}
+
+@media (max-width:450px){
+    .tituloIndex h1{
+        font-size:larger
+    }
+    .tituloIndex h2{
+        font-size:larger
+    }
+}
+
 /*Tarjetas - Inicio*/
 
 .destacadosTarjetas{
@@ -60,6 +140,16 @@
 
 /* Ofertas Tarjetas - Inicio*/
 
+.ofertas{
+    animation: cambiaColor 1.5s alternate-reverse infinite;
+}
+
+@keyframes cambiaColor {
+    to{
+        color: $bg-color;
+    }
+}
+
 .ofertasTarjetas{
     @extend %tarjetas;
     width: 220px;
@@ -96,8 +186,7 @@
 /* Marcas - Inicio */
 
 .img-marcas{
-    width: 100px;
-    height: 100px;
+    @include sizes (100px, 100px);
     }
 
 /* Marcas - Fin */
