@@ -398,48 +398,21 @@ footer ul li {
 }
 /* Instrumentos */
 .bg-img-ins {
-  background-image: url(../multimedia/Img/backgroundImg.png);
+  background-image: url(../multimedia/Img/Instrumentos/BG/bg-inst-1-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
 }
 
-.Ins-Port {
-  width: 100vw;
+.ins-section1 .contenedor {
+  position: relative;
+  width: 100%;
+  height: 500px;
 }
-
-.ins-tarj {
-  display: flex;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  width: 350px;
-  padding: 15px 0px;
-  margin: 15px;
-  background-color: rgba(255, 255, 255, 0.664);
-}
-.ins-tarj:hover {
-  box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.67);
-  transition: 0.5s;
-}
-.ins-tarj h2 {
-  font-size: x-large;
-}
-.ins-tarj p {
-  font-size: medium;
-}
-.ins-tarj .img-Tarj-Ins {
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-}
-.ins-tarj .btnTarjetas {
-  width: auto;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  padding: 0px 5px;
-}
-.ins-tarj .btnTarjetas:hover {
-  background-color: #b67a47;
-  transition: 0.5s;
-  border: 1px solid;
-  padding: 0px 15px;
+.ins-section1 .contenedor h1 {
+  position: absolute;
+  top: 0;
+  color: white;
 }
 
 /* Instrumentos - Fin */
@@ -452,6 +425,59 @@ footer ul li {
     box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
   }
 }
+/*
+.bg-img-ins{
+    @extend %bg-img;
+    background-image: url(../multimedia/Img/backgroundImg.png);
+}
+
+.Ins-Port{
+    width: 100vw;
+}
+
+
+.ins-tarj{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 350px;
+    padding: 15px 0px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.664);
+
+    &:hover{
+        box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
+        transition: 0.5s;
+    }
+
+    h2{
+        font-size:x-large;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    .img-Tarj-Ins{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+
+    .btnTarjetas{
+        width: auto;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 0px 5px;
+        &:hover{
+            background-color: #b67a47;
+            transition: 0.5s;
+            border: 1px solid;
+            padding: 0px 15px;
+        }
+    }
+}
+*/
 .bg-img-audio {
   background-image: url(../multimedia/Img/backgroundImg.png);
 }
@@ -686,7 +712,7 @@ footer ul li {
   background-color: white;
 }
 
-.bg-img-index, .bg-img-cont, .bg-img-rec, .bg-img-ins, .bg-img-audio {
+.bg-img-index, .bg-img-cont, .bg-img-rec, .bg-img-audio {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

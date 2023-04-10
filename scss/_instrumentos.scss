@@ -1,6 +1,46 @@
 /* Instrumentos */
 
 .bg-img-ins{
+    background-image: url(../multimedia/Img/Instrumentos/BG/bg-inst-1-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.ins-section1{
+    .contenedor{
+        position: relative;
+        @include sizes (500px,100%);
+        h1{
+            position: absolute;
+            top: 0;
+            color: white;
+        }
+    }
+}
+
+/* Instrumentos - Fin */
+
+/* Botón WhatsApp */
+
+.container-boton{
+    @extend %WhatsApp-btn
+    }
+    
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+/*
+.bg-img-ins{
     @extend %bg-img;
     background-image: url(../multimedia/Img/backgroundImg.png);
 }
@@ -51,20 +91,4 @@
         }
     }
 }
-
-/* Instrumentos - Fin */
-
-/* Botón WhatsApp */
-
-.container-boton{
-    @extend %WhatsApp-btn
-    }
-    
-@keyframes efecto{
-    0%{
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
-    }
-    100%{
-        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-    }
-}
+*/
