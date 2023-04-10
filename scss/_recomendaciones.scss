@@ -4,19 +4,13 @@
     background-image: url(../multimedia/Img/backgroundImg.png);
 }
 
-.sugRec-título{
-    background-color: rgba(0, 0, 0, 0.404);
-    @include sizes (fit-content,fit-content);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
+.h1SugRec{
+    @extend %Titulos;
     margin-bottom: 100px;
 }
 
 @media (max-width:425px){
-    .sugRec-título h1{
+    .h1SugRec h1{
         font-size: x-large;
     }
 }

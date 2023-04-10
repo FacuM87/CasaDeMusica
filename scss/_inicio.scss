@@ -17,7 +17,7 @@
     position: relative;
     @include sizes (100px,80px);
     margin: 0 auto;
-    border-bottom: 1px solid rgba(17, 29, 34, 0.555);
+    border-bottom: 1px solid $bg-color;
 
     span{
         position: absolute;
@@ -68,11 +68,7 @@
 /* Titulo */
 
 .tituloIndex{
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.39);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: white;
+    @extend %Titulos;
     margin-bottom: 30px;
 }
 

@@ -33,3 +33,65 @@
         transition: ease 1s;
     }
 }
+
+%Titulos{
+    background-color: rgba(0, 0, 0, 0.39);
+    @include sizes (fit-content,fit-content);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%TarjetasOfertasAudio{
+    .tarjOfer-Audio{
+        @include sizes(220px,220px);
+        position:relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 30px;
+        &:hover .tarjCuerpo{
+            transform: translateY(-175px);
+            transition: 1s;
+        }
+        &:hover .btn-ofertasTarjetas{
+            animation: latencia .5s alternate-reverse infinite;
+        }
+        .tarjCuerpo{
+            position: absolute;
+            color: white;
+            text-align: center;
+            left: 20%;
+            transform: translateY(-35px);
+            .p1{
+                text-decoration: line-through;
+                margin: 0;
+                font-size: smaller;
+                color: rgba(211, 211, 211, 0.726);
+            }
+            .btn-ofertasTarjetas{
+                width: auto;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                padding: 0px 5px;
+                &:hover{
+                    background-color: $bg-color;
+                    transition: 0.5s;
+                    border: 1px solid;
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+    
+    @keyframes latencia {
+        0%{
+            background-color: lightgrey;
+        }
+        100%{
+            background-color: $bg-color;
+        }
+        
+    }
+}
