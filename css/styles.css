@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -57,6 +58,20 @@ footer ul li {
 }
 .bg-img-index {
   background-image: url(../multimedia/Img/backgroundImg.png);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.548);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(182, 122, 71);
 }
 
 /* Carrusel Index */
@@ -228,6 +243,20 @@ footer ul li {
 }
 .bg-img-cont {
   background-image: url(../multimedia/Img/backgroundImg.png);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.548);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(182, 122, 71);
 }
 
 /* Formulario de Contacto */
@@ -404,15 +433,181 @@ footer ul li {
   background-position: fixed;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.548);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(182, 122, 71);
+}
+
+/* Section 1 */
+.ins-section1 .h2-1 {
+  position: absolute;
+  top: 300px;
+  left: 280px;
+  cursor: pointer;
+  animation: SlideIn 1.3s ease-out;
+}
+.ins-section1 .h2-1:hover {
+  animation: vibrar1 0.5s ease-out alternate-reverse infinite;
+}
+.ins-section1 .h2-2 {
+  position: absolute;
+  top: 420px;
+  left: 100px;
+  cursor: pointer;
+  animation: SlideIn 1.7s ease-out;
+}
+.ins-section1 .h2-2:hover {
+  animation: vibrar1 0.8s ease-out alternate-reverse infinite;
+}
+.ins-section1 .h2-3 {
+  position: absolute;
+  top: 540px;
+  left: 250px;
+  cursor: pointer;
+  animation: SlideIn 2.1s ease-out;
+}
+.ins-section1 .h2-3:hover {
+  animation: vibrar1 1.1s ease-out alternate-reverse infinite;
+}
+.ins-section1 h2 {
+  font-weight: 200;
+  color: white;
+}
 .ins-section1 .contenedor {
-  position: relative;
   width: 100%;
   height: 500px;
 }
 .ins-section1 .contenedor h1 {
-  position: absolute;
-  top: 0;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-left: 15px;
   color: white;
+  animation: SlideIn 1.3s ease-out;
+}
+.ins-section1 .contenedor .subrayado {
+  width: 245px;
+  height: 1px;
+  background-color: white;
+  top: 10px;
+  animation: SlideIn 0.8s ease-out;
+}
+
+@keyframes vibrar1 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes SlideIn {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 500px) {
+  .links a h2 {
+    left: 80px !important;
+  }
+}
+/* Section 2 - Guitarras */
+.ins-section2 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/Instrumentos/BG/bg-ins2-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section 3 - Bajos */
+.ins-section3 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/Instrumentos/BG/bg-bass-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section 4 - Percu */
+.ins-section4 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/Instrumentos/BG/bg-bata-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cajas Scroll */
+.contenedorCajas {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  overflow-x: auto;
+  width: 60%;
+  height: 280px;
+  margin: 0 auto;
+}
+.contenedorCajas .cajas {
+  position: relative;
+  width: 150px;
+  height: 250px;
+  border: 1px sold white;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.452);
+  overflow: hidden;
+}
+.contenedorCajas .cajas h5 {
+  padding: 0px 2px;
+}
+.contenedorCajas .cajas .pTachado {
+  text-decoration: line-through;
+  margin: 0;
+  font-size: smaller;
+  color: rgba(58, 57, 57, 0.726);
+}
+.contenedorCajas .cajas p {
+  padding: 0px 2px;
+}
+.contenedorCajas .cajas:hover img {
+  animation: vibrar 0.2s alternate-reverse infinite;
+}
+.contenedorCajas .cajas button {
+  position: absolute;
+  z-index: 10;
+  transform: translateY(-100px);
+  width: 100%;
+  background-color: rgba(182, 123, 71, 0.664);
+  border: 1px solid rgba(182, 123, 71, 0.664);
+  border-radius: 5px;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+.contenedorCajas .cajas button:hover {
+  background-color: rgb(182, 122, 71);
+  transition: 0.5s;
+  border: 1px solid rgb(182, 122, 71);
+  color: lightgrey;
+}
+.contenedorCajas .cajas:hover button {
+  transform: translateY(0.5px);
+  transition: 1s;
+}
+
+/*  */
+.art2 h2 {
+  font-weight: 200;
+  color: white;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 /* Instrumentos - Fin */
@@ -425,61 +620,22 @@ footer ul li {
     box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
   }
 }
-/*
-.bg-img-ins{
-    @extend %bg-img;
-    background-image: url(../multimedia/Img/backgroundImg.png);
-}
-
-.Ins-Port{
-    width: 100vw;
-}
-
-
-.ins-tarj{
-    display: flex;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    width: 350px;
-    padding: 15px 0px;
-    margin: 15px;
-    background-color: rgba(255, 255, 255, 0.664);
-
-    &:hover{
-        box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
-        transition: 0.5s;
-    }
-
-    h2{
-        font-size:x-large;
-    }
-
-    p{
-        font-size: medium;
-    }
-
-    .img-Tarj-Ins{
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-    }
-
-    .btnTarjetas{
-        width: auto;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-        padding: 0px 5px;
-        &:hover{
-            background-color: #b67a47;
-            transition: 0.5s;
-            border: 1px solid;
-            padding: 0px 15px;
-        }
-    }
-}
-*/
 .bg-img-audio {
   background-image: url(../multimedia/Img/backgroundImg.png);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.548);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(182, 122, 71);
 }
 
 /* Titulo */
@@ -487,6 +643,70 @@ footer ul li {
   margin-bottom: 70px;
 }
 
+/* Destacados */
+.productosAudio {
+  margin: 20px;
+}
+.productosAudio .contenedorCajas {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  overflow-x: auto;
+  width: 60%;
+  height: 280px;
+  margin: 25px auto;
+}
+.productosAudio .contenedorCajas .cajas {
+  position: relative;
+  width: 150px;
+  height: 250px;
+  border: 1px sold white;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.452);
+  overflow: hidden;
+}
+.productosAudio .contenedorCajas .cajas h5 {
+  padding: 0px 2px;
+}
+.productosAudio .contenedorCajas .cajas .pTachado {
+  text-decoration: line-through;
+  margin: 0;
+  font-size: smaller;
+  color: rgba(58, 57, 57, 0.726);
+}
+.productosAudio .contenedorCajas .cajas p {
+  padding: 0px 2px;
+}
+.productosAudio .contenedorCajas .cajas:hover img {
+  animation: vibrar 0.2s alternate-reverse infinite;
+}
+.productosAudio .contenedorCajas .cajas button {
+  position: absolute;
+  z-index: 10;
+  transform: translateY(-100px);
+  width: 100%;
+  background-color: rgba(182, 123, 71, 0.664);
+  border: 1px solid rgba(182, 123, 71, 0.664);
+  border-radius: 5px;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+.productosAudio .contenedorCajas .cajas button:hover {
+  background-color: rgb(182, 122, 71);
+  transition: 0.5s;
+  border: 1px solid rgb(182, 122, 71);
+  color: lightgrey;
+}
+.productosAudio .contenedorCajas .cajas:hover button {
+  transform: translateY(0.5px);
+  transition: 1s;
+}
+
+@keyframes vibrar {
+  to {
+    transform: scale(1.04);
+  }
+}
 /* Audio */
 .flip-card {
   background-color: transparent;
@@ -538,6 +758,7 @@ footer ul li {
 .auriculares h3 {
   text-align: center;
   color: white;
+  padding-top: 80px;
 }
 .auriculares .animación-h3 {
   animation: cambiaColor 0.8s alternate-reverse infinite;
@@ -618,81 +839,6 @@ footer ul li {
 @keyframes cambiaColor {
   to {
     color: rgb(182, 122, 71);
-  }
-}
-/* Destacados */
-.productosAudio {
-  margin: 20px;
-}
-.productosAudio ::-webkit-scrollbar {
-  width: 10px;
-}
-.productosAudio ::-webkit-scrollbar-track {
-  background-color: rgba(211, 211, 211, 0.548);
-  border-radius: 10px;
-}
-.productosAudio ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: rgb(182, 122, 71);
-}
-.productosAudio .contenedorCajas {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 15px;
-  overflow-x: auto;
-  width: 60%;
-  height: 280px;
-  margin: 25px auto;
-}
-.productosAudio .contenedorCajas .cajas {
-  position: relative;
-  width: 150px;
-  height: 250px;
-  border: 1px sold white;
-  border-radius: 10px;
-  background-color: rgba(211, 211, 211, 0.452);
-  overflow: hidden;
-}
-.productosAudio .contenedorCajas .cajas h5 {
-  padding: 0px 2px;
-}
-.productosAudio .contenedorCajas .cajas .pTachado {
-  text-decoration: line-through;
-  margin: 0;
-  font-size: smaller;
-  color: rgba(58, 57, 57, 0.726);
-}
-.productosAudio .contenedorCajas .cajas p {
-  padding: 0px 2px;
-}
-.productosAudio .contenedorCajas .cajas:hover img {
-  animation: vibrar 0.2s alternate-reverse infinite;
-}
-.productosAudio .contenedorCajas .cajas button {
-  position: absolute;
-  z-index: 10;
-  transform: translateY(-100px);
-  width: 100%;
-  background-color: rgba(182, 123, 71, 0.664);
-  border: 1px solid rgba(182, 123, 71, 0.664);
-  border-radius: 5px;
-  padding: 0px 10px;
-  padding-top: 10px;
-}
-.productosAudio .contenedorCajas .cajas button:hover {
-  background-color: rgb(182, 122, 71);
-  transition: 0.5s;
-  border: 1px solid rgb(182, 122, 71);
-  color: lightgrey;
-}
-.productosAudio .contenedorCajas .cajas:hover button {
-  transform: translateY(0.5px);
-  transition: 1s;
-}
-
-@keyframes vibrar {
-  to {
-    transform: scale(1.04);
   }
 }
 /* Botón WhatsApp */
@@ -797,6 +943,38 @@ footer ul li {
   100% {
     background-color: rgb(182, 122, 71);
   }
+}
+
+.sec2, .sec3, .sec4 {
+  padding-top: 180px;
+}
+.sec2 h2, .sec3 h2, .sec4 h2 {
+  font-weight: 200;
+  color: white;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+.sec2 .artDest, .sec3 .artDest, .sec4 .artDest {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sec2 .artDest .destacado, .sec3 .artDest .destacado, .sec4 .artDest .destacado {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.sec2 .artDest .destacado .cuerpoDest, .sec3 .artDest .destacado .cuerpoDest, .sec4 .artDest .destacado .cuerpoDest {
+  padding-left: 10px;
+}
+.sec2 .artDest .destacado .cuerpoDest h5, .sec3 .artDest .destacado .cuerpoDest h5, .sec4 .artDest .destacado .cuerpoDest h5 {
+  color: white;
+}
+.sec2 .artDest .destacado .cuerpoDest p, .sec3 .artDest .destacado .cuerpoDest p, .sec4 .artDest .destacado .cuerpoDest p {
+  color: white;
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=styles.css.map */

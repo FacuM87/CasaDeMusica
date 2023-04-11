@@ -65,9 +65,9 @@
         font-size: small;
         width: 100%;
         overflow: auto;
+        
     }
 }
-
 /* Caja Comentarios */
 
 .comentarios{
@@ -91,7 +91,7 @@
 /* Botón WhatsApp */
 
 .container-boton{
-    @extend %WhatsApp-btn
+    @extend %WhatsApp-btn;
     }
     
 @keyframes efecto{

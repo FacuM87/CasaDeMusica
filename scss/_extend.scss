@@ -95,3 +95,35 @@
         
     }
 }
+
+%artInst{
+    padding-top: 180px;
+        h2{
+            font-weight: 200;
+            color: white;
+            padding-left: 40px;
+            padding-bottom: 40px;
+        }
+        .artDest{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .destacado{
+                display: flex;
+                width: 400px;
+                height: 200px;
+                overflow: auto;
+                margin-bottom: 40px;
+                .cuerpoDest{
+                    padding-left: 10px;
+                    h5{
+                        color: white;
+                    } 
+                    p{
+                        color: white;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+}

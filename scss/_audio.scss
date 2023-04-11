@@ -4,12 +4,91 @@
     background-image: url(../multimedia/Img/backgroundImg.png);
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(211, 211, 211, 0.548);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:$bg-color;
+}
+
 /* Titulo */
 
 .h1Audio{
     @extend %Titulos;
     margin-bottom: 70px;
 }
+
+/* Destacados */
+
+.productosAudio{
+    margin: 20px;
+    .contenedorCajas{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 15px;
+        overflow-x: auto;
+        @include sizes (280px,60%);
+        margin: 25px auto;
+        .cajas{
+            position: relative;
+            @include sizes (250px, 150px);
+            border: 1px sold white;
+            border-radius: 10px;
+            background-color: rgba(211, 211, 211, 0.452);
+            overflow: hidden;
+            h5{
+                padding: 0px 2px; 
+            } 
+            .pTachado{
+                text-decoration: line-through;
+                margin: 0;
+                font-size: smaller;
+                color: rgba(58, 57, 57, 0.726);
+            }           
+            p{
+                padding: 0px 2px;
+            }
+            &:hover img{
+                animation: vibrar .2s alternate-reverse infinite
+            }
+            button{
+                position: absolute;
+                z-index: 10;
+                transform: translateY(-100px);
+                width: 100%;
+                background-color: rgba(182, 123, 71, 0.664);
+                border: 1px solid rgba(182, 123, 71, 0.664);
+                border-radius: 5px;
+                padding: 0px 10px;
+                padding-top: 10px;
+                &:hover{
+                    background-color: $bg-color;
+                    transition: 0.5s;
+                    border: 1px solid $bg-color;
+                    color: lightgrey;
+                 }
+            }
+            &:hover button{
+                transform: translateY(.5px);
+                transition: 1s;
+            }
+
+        }
+    }
+}
+
+@keyframes vibrar {
+    to{
+        transform: scale(1.04)
+    }
+}
+
+
 
 /* Audio */
 
@@ -64,6 +143,7 @@
     h3{
         text-align: center;
         color: white;
+        padding-top: 80px;
     }
     .animación-h3{
         animation: cambiaColor .8s alternate-reverse infinite;
@@ -75,7 +155,7 @@
         }
     }
     .tarjCar{
-        @extend %TarjetasOfertasAudio
+        @extend %TarjetasOfertasAudio;
     }
 }  
 
@@ -165,81 +245,6 @@
     }
 }
 
-/* Destacados */
-
-.productosAudio{
-    margin: 20px;
-    ::-webkit-scrollbar{
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track{
-        background-color: rgba(211, 211, 211, 0.548);
-        border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background-color:$bg-color;
-    }
-    .contenedorCajas{
-        display: grid;
-        grid-auto-flow: column;
-        gap: 15px;
-        overflow-x: auto;
-        @include sizes (280px,60%);
-        margin: 25px auto;
-        .cajas{
-            position: relative;
-            @include sizes (250px, 150px);
-            border: 1px sold white;
-            border-radius: 10px;
-            background-color: rgba(211, 211, 211, 0.452);
-            overflow: hidden;
-            h5{
-                padding: 0px 2px; 
-            } 
-            .pTachado{
-                text-decoration: line-through;
-                margin: 0;
-                font-size: smaller;
-                color: rgba(58, 57, 57, 0.726);
-            }           
-            p{
-                padding: 0px 2px;
-            }
-            &:hover img{
-                animation: vibrar .2s alternate-reverse infinite
-            }
-            button{
-                position: absolute;
-                z-index: 10;
-                transform: translateY(-100px);
-                width: 100%;
-                background-color: rgba(182, 123, 71, 0.664);
-                border: 1px solid rgba(182, 123, 71, 0.664);
-                border-radius: 5px;
-                padding: 0px 10px;
-                padding-top: 10px;
-                &:hover{
-                    background-color: $bg-color;
-                    transition: 0.5s;
-                    border: 1px solid $bg-color;
-                    color: lightgrey;
-                 }
-            }
-            &:hover button{
-                transform: translateY(.5px);
-                transition: 1s;
-            }
-
-        }
-    }
-}
-
-@keyframes vibrar {
-    to{
-        transform: scale(1.04)
-    }
-}
 
 /* Botón WhatsApp */
 
