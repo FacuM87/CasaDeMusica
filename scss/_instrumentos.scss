@@ -19,6 +19,25 @@
     background-color:$bg-color;
 }
 
+.intraNav{
+    
+    a{
+        text-decoration: none;
+    }
+    .fa-caret-up{
+        color: white;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    
+    .fa-caret-down{
+        color: white;
+        font-size: 20px;
+        padding-left: 15px;
+    }    
+
+}
+
 
 /* Section 1 */
 
@@ -106,18 +125,6 @@
 }
 
 /* Section 2 - Guitarras */
-
-.fa-caret-up{
-    color: white;
-    font-size: 20px;
-    padding-left: 15px;
-}
-
-.fa-caret-down{
-    color: white;
-    font-size: 20px;
-    padding-left: 15px;
-}
 
 .ins-section2{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/Instrumentos/BG/bg-ins2-min.jpg);
