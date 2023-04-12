@@ -10,6 +10,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="shortcut icon" href="../multimedia/Img/logo-favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Instrumentos - Casa de Música</title>
     </head>
     <body>
@@ -45,7 +46,7 @@
             </nav>
         </header>  
         <main>
-            <section class="bg-img-ins ins-section1">
+            <section class="bg-img-ins ins-section1" id="Instrumentos">
                 <div class="contenedor">
                     <h1>Instrumentos</h1>
                     <div class="subrayado"></div>
@@ -66,8 +67,12 @@
 
             
                 <section class="sec2 ins-section2 pb-5" id="Guitarra">
-                    <div data-aos="fade-down">
-                        <h2 class="text-center">Guitarras Destacadas</h2>
+                    <div data-aos="fade-down" class="d-flex">
+                        <div class="d-flex flex-column">
+                            <a href="#Instrumentos"><i class="fa-solid fa-caret-up"></i></a>
+                            <a href="#Bajo"><i class="fa-solid fa-caret-down"></i></a>
+                        </div>  
+                        <h2 class="text-center mx-auto">Guitarras Destacadas</h2>
                     </div>
                     <div class="artDest">    
                         <div data-aos="fade-right" class="destacado">
@@ -172,8 +177,12 @@
                 </section>
 
                 <section id="Bajo" class="sec3 ins-section3 pb-5">
-                    <div data-aos="fade-down">
-                        <h2 class="text-center">Bajos Destacados</h2>
+                    <div data-aos="fade-down" class="d-flex">
+                        <div class="d-flex flex-column">
+                            <a href="#Guitarra"><i class="fa-solid fa-caret-up"></i></a>
+                            <a href="#Percusión"><i class="fa-solid fa-caret-down"></i></a>
+                        </div> 
+                        <h2 class="text-center mx-auto">Bajos Destacados</h2>
                     </div>
                     <div class="artDest">    
                         <div data-aos="fade-right" class="destacado">
@@ -279,8 +288,11 @@
 
 
                 <section id="Percusión" class="sec4 ins-section4 pb-5">
-                    <div data-aos="fade-down">
-                        <h2 class="text-center">Percusión Destacados</h2>
+                    <div data-aos="fade-down" class="d-flex">
+                        <div class="d-flex flex-column">
+                            <a href="#Bajo"><i class="fa-solid fa-caret-up pt-2"></i></a>
+                        </div>
+                        <h2 class="text-center mx-auto">Percusión Destacados</h2>
                     </div>
                     <div class="artDest">    
                         <div data-aos="fade-right" class="destacado">

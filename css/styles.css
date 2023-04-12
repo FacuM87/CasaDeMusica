@@ -32,9 +32,6 @@ footer {
 /* Footer */
 .footerInfo {
   width: 350px;
-  /*ul li{
-      list-style: none;
-  }*/
 }
 
 footer ul li {
@@ -523,6 +520,18 @@ footer ul li {
   }
 }
 /* Section 2 - Guitarras */
+.fa-caret-up {
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.fa-caret-down {
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
 .ins-section2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/Instrumentos/BG/bg-ins2-min.jpg);
   background-repeat: no-repeat;
@@ -600,14 +609,6 @@ footer ul li {
 .contenedorCajas .cajas:hover button {
   transform: translateY(0.5px);
   transition: 1s;
-}
-
-/*  */
-.art2 h2 {
-  font-weight: 200;
-  color: white;
-  padding-left: 40px;
-  padding-bottom: 40px;
 }
 
 /* Instrumentos - Fin */
