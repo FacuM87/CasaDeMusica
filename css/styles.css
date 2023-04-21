@@ -351,7 +351,7 @@ footer ul li {
   }
 }
 .bg-img-rec {
-  background-image: url(../multimedia/Img/backgroundImg.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/bg-mixer-min.jpg);
 }
 
 .h1SugRec {
@@ -395,6 +395,7 @@ footer ul li {
 .cont-recom {
   width: 380px;
   height: 250px;
+  color: lightgray;
 }
 
 @media (max-width: 990px) {
@@ -419,10 +420,14 @@ footer ul li {
 }
 .comentarios h3 {
   width: fit-content;
-  background-color: rgba(0, 0, 0, 0.411);
+  background-color: rgba(211, 211, 211, 0.6);
   border-radius: 10px;
-  color: white;
+  color: rgb(31, 30, 33);
   text-align: center;
+}
+.comentarios .fb-comments {
+  background-color: rgba(211, 211, 211, 0.6);
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
