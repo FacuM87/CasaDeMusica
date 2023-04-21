@@ -2,7 +2,7 @@
 
 .bg-img-index{
     @extend %bg-img;
-    background-image: url(../multimedia/Img/backgroundImg.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/bg-mixer-min.jpg);
 }
 
 ::-webkit-scrollbar{
@@ -82,6 +82,9 @@
 .tituloIndex{
     @extend %Titulos;
     margin-bottom: 30px;
+    h2{
+        font-weight: 300;
+    }
 }
 
 @media (max-width:660px){
@@ -133,8 +136,9 @@
     }
 
     &:hover{
+        transform: translate(0, -10px);
         box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
-        transition: 1s;
+        transition: 0.5s;
     }
 }
 
@@ -148,8 +152,10 @@
 
 /* Ofertas Tarjetas - Inicio*/
 
-.ofertas{
-    animation: cambiaColor 1.5s alternate-reverse infinite;
+.ofertas-ini{
+    animation: cambiaColor 1s alternate-reverse infinite;
+    font-weight: 300;
+    color: lightgray;
 }
 
 @keyframes cambiaColor {
@@ -163,6 +169,7 @@
     width: 220px;
 
     &:hover{
+        transform: translate(0, -10px);
         box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.67);
         transition: 0.5s;
     }
@@ -192,6 +199,17 @@
 /* Ofertas Tarjetas - Fin*/
 
 /* Marcas - Inicio */
+
+.h2Marcas{
+    color: white;
+    font-weight: 300;
+}
+
+.bg-marcas{
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 10px;
+    
+}
 
 .img-marcas{
     @include sizes (100px, 100px);

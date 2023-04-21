@@ -1,7 +1,11 @@
 
 .bg-img-audio{
     @extend %bg-img;
-    background-image: url(../multimedia/Img/backgroundImg.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/bg-mixer-min.jpg);
+}
+
+.dest-aud{
+    padding-top: 20px;
 }
 
 ::-webkit-scrollbar{
@@ -20,13 +24,17 @@
 
 .h1Audio{
     @extend %Titulos;
-    margin-bottom: 70px;
+    color: white;
 }
 
 /* Destacados */
 
 .productosAudio{
     margin: 20px;
+    h3{
+        color: white;
+        font-weight: 300;
+    }
     .contenedorCajas{
         display: grid;
         grid-auto-flow: column;
@@ -43,15 +51,17 @@
             overflow: hidden;
             h5{
                 padding: 0px 2px; 
+                color: white;
             } 
             .pTachado{
                 text-decoration: line-through;
                 margin: 0;
                 font-size: smaller;
-                color: rgba(58, 57, 57, 0.726);
+                color: lightgray;
             }           
             p{
                 padding: 0px 2px;
+                color: white;
             }
             &:hover img{
                 animation: vibrar .2s alternate-reverse infinite
@@ -133,15 +143,27 @@
           }
       }
   }
-  
+
+/* Ofertas */
+
+.ofertas{
+    padding-top: 165px;
+    h3{
+        color: white;
+        font-weight: 300;
+    }
+}
+
+
 /* Oferta Auriculares */
 
 .auriculares{
     background-color: rgba(0, 0, 0, 0.349);
+    padding-top: 125px;
     h3{
         text-align: center;
         color: white;
-        padding-top: 80px;
+        font-weight: 300;
     }
     .animación-h3{
         animation: cambiaColor .8s alternate-reverse infinite;
@@ -160,9 +182,11 @@
 /* Oferta Amplificadores */
 
 .amplificadores{
+    padding-top: 140px;
     h3{
         text-align: center;
-        color: rgb(14, 13, 13);
+        color: white;
+        font-weight: 300;
     }
     .animación-h3{
         animation: cambiaColor .8s alternate-reverse infinite;
@@ -225,9 +249,11 @@
 
 .mixers{
     background-color: rgba(0, 0, 0, 0.349);
+    padding-top: 230px;
     h3{
         text-align: center;
         color: white;
+        font-weight: 300;
     }
     .animación-h3{
         animation: cambiaColor .8s alternate-reverse infinite;

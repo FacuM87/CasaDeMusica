@@ -54,7 +54,7 @@ footer ul li {
   }
 }
 .bg-img-index {
-  background-image: url(../multimedia/Img/backgroundImg.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/bg-mixer-min.jpg);
 }
 
 ::-webkit-scrollbar {
@@ -131,6 +131,9 @@ footer ul li {
 .tituloIndex {
   margin-bottom: 30px;
 }
+.tituloIndex h2 {
+  font-weight: 300;
+}
 
 @media (max-width: 660px) {
   .tituloIndex h2 {
@@ -174,8 +177,9 @@ footer ul li {
   padding: 0px 15px;
 }
 .destacadosTarjetas:hover {
+  transform: translate(0, -10px);
   box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.67);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 @media (max-width: 500px) {
@@ -185,8 +189,10 @@ footer ul li {
 }
 /*Tarjetas - Fin*/
 /* Ofertas Tarjetas - Inicio*/
-.ofertas {
-  animation: cambiaColor 1.5s alternate-reverse infinite;
+.ofertas-ini {
+  animation: cambiaColor 1s alternate-reverse infinite;
+  font-weight: 300;
+  color: lightgray;
 }
 
 @keyframes cambiaColor {
@@ -198,6 +204,7 @@ footer ul li {
   width: 220px;
 }
 .ofertasTarjetas:hover {
+  transform: translate(0, -10px);
   box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.67);
   transition: 0.5s;
 }
@@ -223,6 +230,16 @@ footer ul li {
 
 /* Ofertas Tarjetas - Fin*/
 /* Marcas - Inicio */
+.h2Marcas {
+  color: white;
+  font-weight: 300;
+}
+
+.bg-marcas {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
 .img-marcas {
   width: 100px;
   height: 100px;
@@ -444,6 +461,20 @@ footer ul li {
   background-color: rgb(182, 122, 71);
 }
 
+.intraNav a {
+  text-decoration: none;
+}
+.intraNav .fa-caret-up {
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.intraNav .fa-caret-down {
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
 /* Section 1 */
 .ins-section1 .h2-1 {
   position: absolute;
@@ -488,7 +519,7 @@ footer ul li {
   padding-top: 30px;
   padding-left: 15px;
   color: white;
-  animation: SlideIn 1.3s ease-out;
+  animation: SlideIn 0.8s ease-out;
 }
 .ins-section1 .contenedor .subrayado {
   width: 245px;
@@ -520,18 +551,6 @@ footer ul li {
   }
 }
 /* Section 2 - Guitarras */
-.fa-caret-up {
-  color: white;
-  font-size: 20px;
-  padding-left: 15px;
-}
-
-.fa-caret-down {
-  color: white;
-  font-size: 20px;
-  padding-left: 15px;
-}
-
 .ins-section2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/Instrumentos/BG/bg-ins2-min.jpg);
   background-repeat: no-repeat;
@@ -622,7 +641,11 @@ footer ul li {
   }
 }
 .bg-img-audio {
-  background-image: url(../multimedia/Img/backgroundImg.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.349)), url(../multimedia/Img/bg-mixer-min.jpg);
+}
+
+.dest-aud {
+  padding-top: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -641,12 +664,16 @@ footer ul li {
 
 /* Titulo */
 .h1Audio {
-  margin-bottom: 70px;
+  color: white;
 }
 
 /* Destacados */
 .productosAudio {
   margin: 20px;
+}
+.productosAudio h3 {
+  color: white;
+  font-weight: 300;
 }
 .productosAudio .contenedorCajas {
   display: grid;
@@ -668,15 +695,17 @@ footer ul li {
 }
 .productosAudio .contenedorCajas .cajas h5 {
   padding: 0px 2px;
+  color: white;
 }
 .productosAudio .contenedorCajas .cajas .pTachado {
   text-decoration: line-through;
   margin: 0;
   font-size: smaller;
-  color: rgba(58, 57, 57, 0.726);
+  color: lightgray;
 }
 .productosAudio .contenedorCajas .cajas p {
   padding: 0px 2px;
+  color: white;
 }
 .productosAudio .contenedorCajas .cajas:hover img {
   animation: vibrar 0.2s alternate-reverse infinite;
@@ -752,14 +781,24 @@ footer ul li {
   backface-visibility: hidden;
 }
 
+/* Ofertas */
+.ofertas {
+  padding-top: 165px;
+}
+.ofertas h3 {
+  color: white;
+  font-weight: 300;
+}
+
 /* Oferta Auriculares */
 .auriculares {
   background-color: rgba(0, 0, 0, 0.349);
+  padding-top: 125px;
 }
 .auriculares h3 {
   text-align: center;
   color: white;
-  padding-top: 80px;
+  font-weight: 300;
 }
 .auriculares .animación-h3 {
   animation: cambiaColor 0.8s alternate-reverse infinite;
@@ -770,9 +809,13 @@ footer ul li {
   }
 }
 /* Oferta Amplificadores */
+.amplificadores {
+  padding-top: 140px;
+}
 .amplificadores h3 {
   text-align: center;
-  color: rgb(14, 13, 13);
+  color: white;
+  font-weight: 300;
 }
 .amplificadores .animación-h3 {
   animation: cambiaColor 0.8s alternate-reverse infinite;
@@ -829,10 +872,12 @@ footer ul li {
 /* Oferta Mixers */
 .mixers {
   background-color: rgba(0, 0, 0, 0.349);
+  padding-top: 230px;
 }
 .mixers h3 {
   text-align: center;
   color: white;
+  font-weight: 300;
 }
 .mixers .animación-h3 {
   animation: cambiaColor 0.8s alternate-reverse infinite;

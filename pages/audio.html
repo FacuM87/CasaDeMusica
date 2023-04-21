@@ -10,6 +10,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="shortcut icon" href="../multimedia/Img/logo-favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Audio - Casa de Música</title>
     </head>
     <body>
@@ -44,14 +45,19 @@
                 </div>
             </nav>
         </header> 
-        <main class="bg-img-audio">
-            <div class="h1Audio">
-                <h1 class="text-center p-3">- Audio -</h1> 
+        <main id="destacadosAudio" class="bg-img-audio">
+            <div data-aos="fade-down" class="d-flex dest-aud">
+                <div class="d-flex flex-column intraNav">
+                    <a href="#Ofertas-Audio"><i class="fa-solid fa-caret-down"></i></a>
+                </div>
+                <div class="h1Audio">
+                    <h1 class="text-center mx-auto">- Audio -</h1> 
+                </div> 
             </div>
 
 <!-- Destacados -->
 
-            <section class="productosAudio mb-5">
+            <section class="productosAudio mb-5 pb-5">
                 <article>
                     <h3 class="text-center">- Destacados -</h3>
                     <div class="contenedorCajas">
@@ -141,8 +147,14 @@
 
 <!-- Banner de Ofertas -->
 
-            <section >
-                <h3 class="text-center">- Ofertas -</h3>
+            <section id="Ofertas-Audio" class="ofertas">
+                <div data-aos="fade-down" class="d-flex">
+                    <div class="d-flex flex-column intraNav">
+                        <a href="#destacadosAudio"><i class="fa-solid fa-caret-up"></i></a>
+                        <a href="#ofertasAudio"><i class="fa-solid fa-caret-down"></i></a>
+                    </div> 
+                    <h3 class="text-center mx-auto">- Ofertas -</h3>
+                </div>
                 <div class="d-flex flex-wrap justify-content-around mt-2 mb-5">
                     <article class="flip-card m-5">
                         <div class="flip-card-inner">
@@ -151,7 +163,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <div>
-                                    <a href="#Auriculares"><h5>Auriculares</h5></a>
+                                    <a href="#ofertasAudio"><h5>Auriculares</h5></a>
                                 </div>
                             </div>
                         </div>
@@ -188,9 +200,15 @@
 
 <!-- Ofertas -->
 
-            <section class="pt-5">
-                <article id="Auriculares" class="auriculares py-4" data-aos="zoom-in"> 
-                    <h3>- Auriculares en <span class="animación-h3">OFERTA</span> -</h3>
+            <section id="ofertasAudio">
+                <article id="Auriculares" class="auriculares" data-aos="zoom-in"> 
+                    <div data-aos="fade-down" class="d-flex pt-5">
+                        <div class="d-flex flex-column intraNav">
+                            <a href="#Ofertas-Audio"><i class="fa-solid fa-caret-up"></i></a>
+                            <a href="#Amplificadores"><i class="fa-solid fa-caret-down"></i></a>
+                        </div> 
+                        <h3 class="text-center mx-auto">- Auriculares en <span class="animación-h3">OFERTA</span> -</h3>
+                    </div>
                     <div class="tarjCar d-flex justify-content-center flex-wrap">
                         <div class="tarjOfer-Audio">
                             <img src="../multimedia/Img/Audio/Auriculares Oferta/pioneerHeadphones220x220.png" alt="Auriculares Pioneer">
@@ -222,8 +240,14 @@
                     </div>        
                 </article>
 
-                <article id="Amplificadores" class="amplificadores py-4" data-aos="zoom-in">
-                    <h3>- Amplificadores en <span class="animación-h3">OFERTA</span> -</h3>
+                <article id="Amplificadores" class="amplificadores" data-aos="zoom-in">
+                    <div data-aos="fade-down" class="d-flex pt-5">
+                        <div class="d-flex flex-column intraNav">
+                            <a href="#Auriculares"><i class="fa-solid fa-caret-up"></i></a>
+                            <a href="#Mixers"><i class="fa-solid fa-caret-down"></i></a>
+                        </div> 
+                        <h3 class="text-center mx-auto">- Amplificadores en <span class="animación-h3">OFERTA</span> -</h3>
+                    </div>
                     <div class="tarjCar d-flex justify-content-center flex-wrap">
                         <div class="tarjOfer-Audio">
                             <img src="../multimedia/Img/Audio/Amplificadores Oferta/ampLaney220x220.png" alt="Amplificador Laney">
@@ -255,8 +279,13 @@
                     </div>        
                 </article>
 
-                <article id="Mixers" class="mixers py-4" data-aos="zoom-in">
-                    <h3>- Mixers en <span class="animación-h3">OFERTA</span> -</h3>
+                <article id="Mixers" class="mixers" data-aos="zoom-in">
+                    <div data-aos="fade-down" class="d-flex pt-5">
+                        <div class="d-flex flex-column intraNav">
+                            <a href="#Amplificadores"><i class="fa-solid fa-caret-up"></i></a>
+                        </div> 
+                        <h3 class="text-center mx-auto">- Mixers en <span class="animación-h3">OFERTA</span> -</h3>
+                    </div>
                     <div class="tarjCar d-flex justify-content-center flex-wrap">
                         <div class="tarjOfer-Audio">
                             <img src="../multimedia/Img/Audio/Mixers Oferta/mixerMackie220x220.png" alt="Mixer Mackie">

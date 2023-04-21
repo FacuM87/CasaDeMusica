@@ -88,7 +88,7 @@
             padding-top: 30px;
             padding-left: 15px;
             color: white;
-            animation: SlideIn 1.3s ease-out;
+            animation: SlideIn .8s ease-out;
             }
         .subrayado{
             width: 245px;
@@ -179,6 +179,7 @@
         border-radius: 10px;
         background-color: rgba(211, 211, 211, 0.452);
         overflow: hidden;
+
         h5{
             padding: 0px 2px; 
         } 
